@@ -70,7 +70,7 @@
 * But its open nature made it extremely popular
 
 
-### JavaScript has been exploding on the server side
+### Full Stack JavaScript has been expanding rapidly
 * Netflix
 * New York Times
 * Uber
