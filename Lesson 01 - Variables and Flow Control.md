@@ -244,6 +244,19 @@ Write a script that:
 - if not
 	- log a message to console saying ("I think I'm okay for now")   
 
+
+**CHALLENGE 1 ANSWER:**
+
+```javascript
+var cups = 1
+
+if(cups < 3){
+    console.log("Yes. I'll take another cup of coffee!");
+} else {
+    console.log("I think I'm okay for now.");
+}
+```
+
 ### Loose Equality
 The double equals `==` tries to ignore the type when comparing. The triple equals `===` takes into account type. These are called loose and strict equality checks. You pretty much always want to use strict.
 
@@ -292,7 +305,7 @@ if(false || 0 || null || whatever) {
 * `===`
 * `!=`
 * `!==`
-* `!!`
+* `!`
 
 
 ### Short-circuit evaluation
@@ -303,12 +316,6 @@ true || somethingTotallyUndefined;  //true, no error
 false && somethingTotallyUndefined; //false, no error
 ```
 
-Sometimes this is used in place of if statements
-
-```javascript
-somevar && myFunction() //equivalant to if(somevar)
-somevar || myFunction() //equivalant to if(!somevar)
-```
 
 **CHALLENGE 2**<br>
 (10 minutes)
@@ -321,6 +328,25 @@ somevar || myFunction() //equivalant to if(!somevar)
 6. Set the precipitation variable to 'raining' or 'snowing' and only output 'time to swim' if there is no precipitation
 7. Create an 'indoors' variable and set it to true
 8. If indoors, then output 'time to swim' regardless of the temp and precip.
+
+
+
+**CHALLENGE 2 ANSWER:**
+
+```javascript
+var temp = 85;
+var precipitation = false;
+var indoors = true;
+
+console.log("The temperature is " + temp + " degrees");
+
+if (temp > 80 && precipitation === false) {
+  console.log("time to swim!");
+} else if (indoors) {
+  console.log("time to swim!");
+}
+
+```
 
 ## Iteration
 
@@ -348,6 +374,23 @@ within the parentheses, there are 3 key things happening:
 - Write a simple version of "99 bottles of beer on the wall"<br>
 (note: make sure you're logging the result to the console)
 - Once you get the program running, log "Hey! We need more beer!" to the console when your counter hit's 0
+
+
+
+**CHALLENGE 3 ANSWER:**
+
+```javascript
+var bottle = 99;
+
+for (bottle; bottle >= 0; bottle --){
+
+  if (bottle === 0) {
+    console.log("Hey! Go buy more beer!");
+  } else {
+      console.log(bottle + " bottles of beer on the wall");
+  }
+}
+```
 
 
 ### While Statement
