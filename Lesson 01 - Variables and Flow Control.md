@@ -70,7 +70,7 @@
 * But its open nature made it extremely popular
 
 
-### Full Stack JavaScript has been expanding rapidly
+### JavaScript has been exploding on the server side
 * Netflix
 * New York Times
 * Uber
@@ -315,7 +315,7 @@ As soon as the interpreter knows that a statement will evaluate to `true` or `fa
 true || somethingTotallyUndefined;  //true, no error
 false && somethingTotallyUndefined; //false, no error
 ```
-
+ 
 
 **CHALLENGE 2**<br>
 (10 minutes)
