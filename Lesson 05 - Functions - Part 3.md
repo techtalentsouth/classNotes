@@ -201,7 +201,7 @@ var players = [
 - Find a player with the name 'Matt'
 - Get an array of all players with position 'RB'
 - Get an array of all the players lastNames
-- Get an array of the full names of all the runningbacks with more than 5 touchdowns
+- Get an array of the full names of all the wide receivers with more than 5 touchdowns
 - Get the number of touchdowns scored by Runningbacks
 
 ## Asynchronous Programming 
