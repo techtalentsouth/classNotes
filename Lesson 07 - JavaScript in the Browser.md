@@ -516,13 +516,11 @@ console.log("one for the " + littleBoy + " that lives " + whereHeLives);
 
 ## Homework
 
-###**Due 8/11/16**
+###**Due 10/20/16**
 
-- Complete the BaaBaaBlackSheep debugging challenge (individually)
-  - Driver - push the code to repo with the naming convention: `js_debugging_YOUR_TEAMS_INTIALS_HERE`
-  - Navigator - clone the repoe and create a new branch to work from 
+- Complete the BaaBaaBlackSheep debugging challenge
   
-### **Due 8/16/16**
+### **Due 10/25/16**
 
 - Read this [excellent blog post](http://juliepagano.com/blog/2014/05/18/javascript-debugging-for-beginners/) about developer tools.
 - Complete the [Discover DevTools](https://www.codeschool.com/courses/discover-devtools) course at CodeSchool
