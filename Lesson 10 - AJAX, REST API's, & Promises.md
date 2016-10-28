@@ -5,6 +5,46 @@
 - So far, we've been on an island on the page. It's time to leave the island and communicate with the server.
 - Data API's let JS get/set data to a server
 
+## New Terms
+- XHR - XML Http Request Object
+- AJAX - Asynchronous Javascript And Xml
+
+## Websites used in this lesson
+- http://jsonplaceholder.typicode.com
+- http://jsonplaceholder.typicode.com/todos
+
+## Quick Review
+There are a few formats that are returned from an AJAX request which we have already reviewed.  There formats are either HTML, XML, or JSON.  JSON is the format we will be interested for this class and it differs slightly from the _object literal notation_ we have used till now.
+
+
+### Object Literal Notation
+	{
+		name: "Jamie",
+		course: "Javascript Application Development",
+		students: 4
+	}
+
+
+### JSON Format
+Notice the keys are in double quotes("key") and they are separated from the values by a colon (:).  Lastly, each "key" : value pair is separated by a comma(,).
+
+	{
+		"name":"Jamie",
+		"course": "Javascript Application Development"
+		"students": 4
+	}
+## Javascript way to convert Object Literal to JSON and vice versa
+In case you are wondering, there are a few javascript functions that convert the literal notation to JSON and back.  The functions are as follows:
+
+```
+//This function takes the literal object and returns a JSON object
+JSON.stringify();
+
+//This function processes a string containing JSON Data and converts them to Javascript objects
+JSON.parse();
+
+```
+
 ## XHR
 JavaScript has built in support for creating HTTP requests using the XML HTTP Request object (XHR) also known as AJAX.
 
@@ -13,6 +53,11 @@ JavaScript has built in support for creating HTTP requests using the XML HTTP Re
 	- Header - Metadata about the request (e.g. type, expected response, cookies...)
 	- Body	- Payload (e.g. post data)
 - Response is text. API responses are usually JSON.
+- When a server response to any request, it sends back a request such as the following
+	- 200 - The server has responded and all is ok
+	- 304 - Not Modified
+	- 404 - Page Not Found
+	- 500 - Internal error on the server
 - Imagine navigating to a webpage, but instead of getting HTML, you get JSON text.
 - Native API is low level, so libraries like jQuery are used.
 
@@ -50,7 +95,7 @@ function ajaxCall() {
 })(document);
 ```
 
-###### corresponding html
+##### HTML
 
 ```html
 <body>
@@ -63,7 +108,7 @@ function ajaxCall() {
      <ul class="listOne"></ul>
   </div>
   <script src="main.js" charset="utf-8"></script>
-  </body>
+</body>
 ```
 
 <br>
@@ -112,13 +157,16 @@ Get todo's with userId=1
 ```javascript
 $.get('http://jsonplaceholder.typicode.com/todos', {userId: 1}, function(t){
 
-})
+});
 
 
 ```
 
 ### POST Requests
-Update last name of student with ID=3 to 'Smith'
+For example, you can use the POST request to update the last name of student with ID=3 to 'Smith'
+
+###Add a new Todo Item
+In this example, we are adding a new todo item to the list.  The response from the website is an object with the newly created todo
 
 ```javascript
 $.post('http://jsonplaceholder.typicode.com/todos', {		
@@ -128,11 +176,11 @@ $.post('http://jsonplaceholder.typicode.com/todos', {
 	function(response){
 		//Handle response, which usually contains the updated object including new ID's
 
-	})
+	});
 ```
 
 ### PUT and DELETE
-These are idempotent. You can put something 100 times and you'll only get one object saved.
+These are important. You can put something 100 times and you'll only get one object saved.
 
 ```javascript
 //Replace todo with id: 1
@@ -144,7 +192,7 @@ $.ajax({
 	complete: function(response){
 		//handle response which usually includes the updated object.
 	}
-})
+});
 
 //Remove the object at '/todo/3'
 var newObject = $.ajax({
@@ -153,7 +201,7 @@ var newObject = $.ajax({
 	complete: function(response){
 		//handle response
 	}
-})
+});
 
 ```
 ### PUT vs POST
@@ -214,23 +262,23 @@ Use jQuery to do the following things with the http://jsonplaceholder.typicode.c
     	- When the user clicks on a post, display all the comments from that post
     	- Display a link back to all posts
     
-<!--
+
 ## Exercise 1: Answers
 Just showing the REST parts
 
 ```javascript
 // 1) Get all posts
-$.get('http://jsonplaceholder.typicode.com/posts', function(data){
+//$.get('http://jsonplaceholder.typicode.com/posts', function(data){
 	console.log(data);
 });
 
 // 2) Get post with id of 10
-$.get('http://jsonplaceholder.typicode.com/post/10', function(data){
+$.get('http://jsonplaceholder.typicode.com/posts/10', function(data){
 	console.log(data);
 });
 
 // 3) Get the comments from post with id of 12
-$.get('http://jsonplaceholder.typicode.com/post/12/comments', function(data){
+$.get('http://jsonplaceholder.typicode.com/posts/12/comments', function(data){
 	console.log(data);
 });
 
@@ -283,7 +331,7 @@ $.ajax({
 	}
 })
 ```
--->
+
 
 ## Problems with Callback Pattern
 To this point, we've been using the **'Callback Pattern'**, which works great for simple cases, but breaks down in real world situations
@@ -332,8 +380,9 @@ Imagine you had an error finding a user with that username, but wanted to show p
 ## Promises
 
 - A promise is an object that represents an *eventual* value.
-- Promises allow async code to behave synchronously
+- **Promises allow async code to behave synchronously**
 - There are many libraries that create promises, but they are built in to ES6
+- Utilizes the *then* function
 
 ### Creating a Promise
 
@@ -526,6 +575,18 @@ Using the API at http://jsonplaceholder.typicode.com/ create an app with the fol
 	- Thumbnails of all the photos and the photo's title
 	- A search box that filters the photos by title as the user types
 	- A back link to the user homepage
+
+## Reference Links
+
+```
+	http://jsonplaceholder.typicode.com/users
+	http://jsonplaceholder.typicode.com/users?username=
+	http://jsonplaceholder.typicode.com/posts?userId=
+	https://jsonplaceholder.typicode.com/comments?postId=
+	http://jsonplaceholder.typicode.com/photos?albumId=
+	http://jsonplaceholder.typicode.com/albums?userId=
+```
+
 
 ## Homework
 
