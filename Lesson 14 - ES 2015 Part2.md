@@ -223,13 +223,13 @@ console.log(x,y,z);
 
 ```javascript
 let instructor = {
-  name: "Shane",
-  email: "shane@techtalentsouth.com"
+  name: "Jamie",
+  email: "info@techtalentsouth.com"
 }
 let { name: x , email: y } = instructor;
 
 console.log(x);
-// Shane
+// Jamie
 ```
 
 ### Bringing it all together
@@ -238,7 +238,7 @@ Let's use destructuring and default parameters in a function:
 
 ```javascript
 let instructor = {
-  name: "Shane",
+  name: "Jamie",
 }
 
 function teacher({name, email = "info@techtalentsouth.com"}) {
@@ -246,7 +246,7 @@ function teacher({name, email = "info@techtalentsouth.com"}) {
 }
 
 teacher(instructor);
-// Shane info@techtalentsouth.com
+// Jamie info@techtalentsouth.com
 ```
 
 ## Exercise
