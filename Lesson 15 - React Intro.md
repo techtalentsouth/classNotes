@@ -543,17 +543,14 @@ Navigate to [localhost:3000](http://localhost:3000) and you'll see a starter pag
 
 ## Homework 
 
-###**Due 9/8/16**
-
-- Read and Review the Class Notes from [React Intro](https://github.com/ttsJavaScriptAppDevelopmentSummer16/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#lesson-14---react) specifically: 
-  - [Iterative Rendering](https://github.com/ttsJavaScriptAppDevelopmentSummer16/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#iterative-rendering)
-  - [Dynamic Class Names](https://github.com/ttsJavaScriptAppDevelopmentSummer16/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#dynamic-class-names)
-  - [Inline Styles](https://github.com/ttsJavaScriptAppDevelopmentSummer16/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#inline-styles)
+- Read and Review the Class Notes from [React Intro](https://github.com/techtalentsouth/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md) specifically: 
+  - [Iterative Rendering](https://github.com/techtalentsouth/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#iterative-rendering)
+  - [Dynamic Class Names](https://github.com/techtalentsouth/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#dynamic-class-names)
+  - [Inline Styles](https://github.com/techtalentsouth/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#inline-styles)
 - READ the documentation at [Create React App](https://github.com/facebookincubator/create-react-app)
 - Create a new Application (with create react app) named `react_message_YOUR_INITIALS_HERE`
-	- Complete Exercises [#1](https://github.com/ttsJavaScriptAppDevelopmentSummer16/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#exercise-1-rendering-a-simple-component) and [#2](https://github.com/ttsJavaScriptAppDevelopmentSummer16/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#exercise-2-rendering-components-with-logic) in your newly created app
-	- push the completed code to GitHub
-	
+	- Complete Exercises [#1](https://github.com/techtalentsouth/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#exercise-1-rendering-a-simple-component) and [#2](https://github.com/techtalentsouth/classNotes/blob/master/Lesson%2015%20-%20React%20Intro.md#exercise-2-rendering-components-with-logic) in your newly created app
+	- push the completed code to GitHub	
 
 ## Reading 
 
