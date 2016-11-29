@@ -173,7 +173,7 @@ With browserHistory implemented, your `<Router>` component knows which *history 
     - Clone the repo
     - Create a new branch
     - Push the changes back up to the class GitHub repo
-- Study [Delcrative Routing for React](https://react-router-website-uxmsaeusnn.now.sh/quick-start)
+- Study [Declarative Routing for React](https://react-router-website-uxmsaeusnn.now.sh/quick-start)
     - Write about the example you find most interesting
 
 
@@ -222,8 +222,8 @@ class Login extends React.Component{
 
 let routes = (
   <Router history={browserHistory}>
-    <Route name="welcome" path="/" component={Welcome}/>
-    <Route name="login" path="/login" component={Login}/>
+    <Route path="/" component={Welcome}/>
+    <Route path="/login" component={Login}/>
   </Router>
 );
 
